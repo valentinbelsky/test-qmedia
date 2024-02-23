@@ -38,14 +38,13 @@
 
         <div class="bg-white">
             <div>
-                <h1 class="pt-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Выбери своего
-                    покемона</h1>
+                <h1 class="pt-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Choose your Pokemon</h1>
             </div>
 
             <div>
                 @if($errors)
                     @foreach($errors->all() as $error)
-                    {{$error}} <br>
+                        <p style="color: red;">{{$error}}</p>
                     @endforeach
                 @endif
             </div>
@@ -189,7 +188,7 @@
 
             @if(isset($idealPokemons))
                 <div class="mx-auto max-w-2xl px-4 sm:px-6 sm:pt-4 sm:pb-24 lg:max-w-7xl lg:px-8">
-                    <h2 class="pb-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Твой идеальный вариант</h2>
+                    <h2 class="pb-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Your ideal option</h2>
                     <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         @foreach($idealPokemons as $pokemon)
                             <a href="#" class="group">
@@ -353,7 +352,7 @@
 
             @if(isset($mediumPokemons))
                 <div class="mx-auto max-w-2xl px-4 sm:px-6 sm:pt-4 sm:pb-24 lg:max-w-7xl lg:px-8">
-                    <h2 class="pb-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Сомнительно, но окэй</h2>
+                    <h2 class="pb-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Doubtful but ok</h2>
                     <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         @foreach($mediumPokemons as $pokemon)
                             <a href="#" class="group">

@@ -36,10 +36,10 @@ class PokemonStoreRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'gender.required' => 'Поле "Gender" обязательно для заполнения',
-            'growth_rate.required' => 'Поле "Growth rate" обязательно для заполнения',
-            'nature.required' => 'Поле "Nature" обязательно для заполнения',
-            'color.required' => 'Поле "Color" обязательно для заполнения',
+            'gender.required' => 'Field "Gender" is required',
+            'growth_rate.required' => 'Field "Growth rate" is required',
+            'nature.required' => 'Field "Nature" is required',
+            'color.required' => 'Field "Color" is required',
 
         ];
     }

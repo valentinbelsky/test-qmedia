@@ -11,7 +11,7 @@ class PokemonService
 {
     private const POKEMON_CACHE_KEY = 'pokemons';
     private const DEFAULT_OFFSET = 0;
-    private const DEFAULT_LIMIT = 200;
+    private const DEFAULT_LIMIT = 1302;
     protected PokeApi $api;
 
     public function __construct(PokeApi $api)
